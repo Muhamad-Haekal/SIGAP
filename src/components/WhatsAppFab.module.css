@@ -1,0 +1,37 @@
+.fab {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 60;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px -6px rgba(0, 0, 0, 0.35);
+  animation: fabpulse 2.6s ease-in-out infinite;
+}
+
+.fab svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+@keyframes fabpulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 26px -6px rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 10px 30px -2px rgba(37, 211, 102, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab {
+    animation: none;
+  }
+}

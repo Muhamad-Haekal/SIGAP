@@ -1,0 +1,130 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.logoMark {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoMark svg {
+  width: 22px;
+  height: 22px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.navLinks a {
+  color: var(--ink-soft);
+  transition: color 0.15s;
+}
+
+.navLinks a:hover {
+  color: var(--orange-dark);
+}
+
+.navCta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navCtaBtn {
+  padding: 10px 18px;
+}
+
+.menuToggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+}
+
+.menuToggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mobileCta {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .navLinks {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--line);
+    gap: 20px;
+    transform: translateY(-130%);
+    transition: transform 0.25s ease;
+  }
+
+  .navLinksOpen {
+    transform: translateY(0);
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .navCta {
+    display: none;
+  }
+
+  .mobileCta {
+    color: var(--white);
+    display: inline-flex;
+    margin-top: 6px;
+    padding: 10px 18px;
+    width: 100%;
+  }
+
+  .mobileCta:hover {
+    color: var(--white);
+  }
+}

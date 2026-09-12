@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, var(--orange-tint) 0%, var(--white) 78%);
+  padding: 64px 0 0;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: clamp(2.3rem, 4.4vw, 3.4rem);
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: var(--orange);
+}
+
+.lead {
+  font-size: 1.08rem;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.trust {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.trust div {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--orange-dark);
+}
+
+.trust span {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.sceneBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 0.92;
+}
+
+.sceneBox svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sceneBox {
+    order: -1;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
