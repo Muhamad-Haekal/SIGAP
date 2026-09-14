@@ -7,43 +7,40 @@ export default function Footer() {
     <footer className={styles.footer} id="kontak">
       <div className="wrap">
         <div className={styles.grid}>
-          <div>
+
+          {/* brand */}
+          <div className={styles.brand}>
             <div className={styles.logo}>
               <span className={styles.logoMark}>
                 <LogoMark />
               </span>
               SIGAP Express
             </div>
-            <p>Jasa pengantaran dan packing barang untuk kebutuhan rumah, kantor, dan usaha kecil.</p>
+            <p className={styles.brandDesc}>
+              Jasa pengantaran dan packing barang untuk kebutuhan rumah, kantor, dan usaha kecil.
+            </p>
           </div>
 
+          {/* layanan */}
           <div className={styles.col}>
             <h4>Layanan</h4>
             <ul>
-              <li>
-                <a href="#layanan">Jasa Pengantaran</a>
-              </li>
-              <li>
-                <a href="#layanan">Packing &amp; Wrapping</a>
-              </li>
-              <li>
-                <a href="#layanan">Antar + Packing</a>
-              </li>
+              <li><a href="#layanan">Jasa Pengantaran</a></li>
+              <li><a href="#layanan">Packing &amp; Wrapping</a></li>
+              <li><a href="#layanan">Antar + Packing</a></li>
             </ul>
           </div>
 
+          {/* halaman */}
           <div className={styles.col}>
             <h4>Halaman</h4>
             <ul>
-              <li>
-                <a href="#proses">Cara Kerja</a>
-              </li>
-              <li>
-                <a href="#kenapa">Kenapa Kami</a>
-              </li>
+              <li><a href="#proses">Cara Kerja</a></li>
+              <li><a href="#kenapa">Kenapa Kami</a></li>
             </ul>
           </div>
 
+          {/* kontak */}
           <div className={styles.col}>
             <h4>Kontak</h4>
             <ul>
@@ -56,14 +53,11 @@ export default function Footer() {
                   WhatsApp: +62 856-9407-9087
                 </a>
               </li>
-              <li>
-                <span className={styles.muted}>Area layanan: dapat disesuaikan</span>
-              </li>
-              <li>
-                <span className={styles.muted}>Jam operasional: 08.00–20.00</span>
-              </li>
+              <li><span className={styles.muted}>Area: dapat disesuaikan</span></li>
+              <li><span className={styles.muted}>Jam: 08.00–20.00</span></li>
             </ul>
           </div>
+
         </div>
 
         <div className={styles.bottom}>

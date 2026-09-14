@@ -1,15 +1,23 @@
 .services {
-  padding: 96px 0;
+  padding: var(--section-y) 0;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
+  align-items: start;
 }
 
 @media (max-width: 980px) {
   .cards {
     grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: var(--section-y-mobile) 0;
   }
 }

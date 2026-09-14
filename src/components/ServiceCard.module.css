@@ -1,30 +1,47 @@
 .card {
   position: relative;
-  padding: 32px 26px;
-  border: 1px solid var(--line);
+  padding: 28px 24px;
+  border: 1.5px solid var(--line);
   border-radius: var(--radius-card);
+  background: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
+  box-shadow: var(--shadow-xs);
   transition:
-    border-color 0.2s,
-    transform 0.2s;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .card:hover {
   border-color: var(--orange);
-  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
+/* ─── featured variant ─── */
 .featured {
   background: var(--ink);
   border-color: var(--ink);
-  color: var(--white);
+  box-shadow: var(--shadow-lg);
 }
 
-.featured p,
+.featured:hover {
+  border-color: var(--orange-dark);
+  transform: translateY(-3px);
+}
+
+.featured p {
+  color: #c4b8ab;
+}
+
 .featured li {
-  color: #e8ddd2;
+  color: #c4b8ab;
+}
+
+.featured h3 {
+  color: var(--white);
 }
 
 .featured .tag {
@@ -32,35 +49,40 @@
   color: var(--white);
 }
 
+/* ─── tag pill ─── */
 .tag {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 20px;
+  right: 20px;
   background: var(--orange-tint);
   color: var(--orange-dark);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  padding: 5px 10px;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
   border-radius: 100px;
+  text-transform: uppercase;
 }
 
+/* ─── icon box ─── */
 .icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background: var(--orange-tint);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .featured .icon {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .icon svg {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   color: var(--orange-dark);
 }
 
@@ -68,12 +90,13 @@
   color: var(--orange);
 }
 
+/* ─── checklist ─── */
 .card ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 6px;
-  font-size: 0.92rem;
+  gap: 7px;
+  margin-top: 4px;
+  font-size: 0.9rem;
   color: var(--ink-soft);
 }
 
@@ -81,25 +104,37 @@
   display: flex;
   gap: 8px;
   align-items: flex-start;
+  line-height: 1.45;
 }
 
 .card ul li svg {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 2px;
   color: var(--orange);
 }
 
+.featured ul li svg {
+  color: #f97316;
+}
+
+/* ─── CTA link ─── */
 .cta {
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 12px;
   font-weight: 700;
+  font-size: 0.9rem;
   color: var(--orange-dark);
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.94rem;
+  gap: 5px;
+  transition: gap 0.15s ease, color 0.15s;
+}
+
+.cta:hover {
+  gap: 9px;
+  color: var(--orange);
 }
 
 .featured .cta {
@@ -107,6 +142,14 @@
 }
 
 .cta svg {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* ─── mobile ─── */
+@media (max-width: 480px) {
+  .card {
+    padding: 24px 20px;
+  }
 }

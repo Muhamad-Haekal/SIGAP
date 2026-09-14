@@ -1,32 +1,56 @@
 .fab {
   position: fixed;
-  bottom: 22px;
-  right: 22px;
-  z-index: 60;
-  width: 60px;
-  height: 60px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 200;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: #25d366;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 26px -6px rgba(0, 0, 0, 0.35);
-  animation: fabpulse 2.6s ease-in-out infinite;
+  box-shadow: 0 4px 20px -4px rgba(37, 211, 102, 0.55),
+              0 2px 8px rgba(0, 0, 0, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  animation: fabpulse 2.8s ease-in-out infinite;
+}
+
+.fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px -4px rgba(37, 211, 102, 0.65),
+              0 2px 10px rgba(0, 0, 0, 0.20);
 }
 
 .fab svg {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   fill: #fff;
 }
 
 @keyframes fabpulse {
-  0%,
-  100% {
-    box-shadow: 0 10px 26px -6px rgba(37, 211, 102, 0.5);
+  0%, 100% {
+    box-shadow: 0 4px 20px -4px rgba(37, 211, 102, 0.45),
+                0 2px 8px rgba(0, 0, 0, 0.16);
   }
   50% {
-    box-shadow: 0 10px 30px -2px rgba(37, 211, 102, 0.75);
+    box-shadow: 0 4px 28px -2px rgba(37, 211, 102, 0.70),
+                0 2px 8px rgba(0, 0, 0, 0.16);
+  }
+}
+
+/* mobile — lebih kecil agar tidak menutupi konten */
+@media (max-width: 480px) {
+  .fab {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 18px;
+  }
+
+  .fab svg {
+    width: 24px;
+    height: 24px;
   }
 }
 

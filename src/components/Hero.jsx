@@ -32,17 +32,17 @@ export default function Hero() {
             </a>
           </div>
           <div className={styles.trust}>
-            <div>
+            <div className={styles.trustItem}>
               <strong>3</strong>
               <span>pilihan layanan</span>
             </div>
-            <div>
+            <div className={styles.trustItem}>
               <strong>Kardus &amp; kayu</strong>
               <span>packing sesuai jenis barang</span>
             </div>
-            <div>
+            <div className={styles.trustItem}>
               <strong>Respon cepat</strong>
-              <span>balasan chat dalam hitungan menit</span>
+              <span>balasan chat dalam menit</span>
             </div>
           </div>
         </div>

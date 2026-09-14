@@ -16,7 +16,7 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} role="banner">
       <div className={`wrap ${styles.nav}`}>
         <a href="#" className={styles.logo}>
           <span className={styles.logoMark}>

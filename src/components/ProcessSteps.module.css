@@ -1,64 +1,80 @@
 .process {
-  padding: 96px 0;
+  padding: var(--section-y) 0;
   background: var(--orange-tint);
 }
 
+@media (max-width: 640px) {
+  .process {
+    padding: var(--section-y-mobile) 0;
+  }
+}
+
+/* ─── desktop 5-col ─── */
 .steps {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 18px;
-  margin-top: 20px;
+  gap: 20px;
   position: relative;
 }
 
 .step {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
 }
 
+/* connector line behind numbers */
+.line {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  right: 22px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--orange) 0 7px,
+    transparent 7px 15px
+  );
+  opacity: 0.35;
+  z-index: 0;
+}
+
+/* numbered circle */
 .num {
   position: relative;
   z-index: 1;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: var(--white);
   border: 2px solid var(--orange);
   color: var(--orange-dark);
   font-weight: 800;
+  font-size: 0.95rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
 }
 
 .step h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  margin-top: 2px;
 }
 
 .step p {
-  font-size: 0.88rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
 }
 
-.line {
-  position: absolute;
-  top: 22px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--orange-dark) 0 8px,
-    transparent 8px 16px
-  );
-  z-index: 0;
-  opacity: 0.5;
-}
-
-@media (max-width: 980px) {
+/* ─── tablet: 3 columns ─── */
+@media (max-width: 900px) {
   .steps {
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px 20px;
   }
 
   .line {
@@ -66,14 +82,52 @@
   }
 }
 
-@media (max-width: 720px) {
-  .steps {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 400px) {
+/* ─── mobile: 1 column with vertical connector ─── */
+@media (max-width: 540px) {
   .steps {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .step {
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 0 0 28px 0;
+    position: relative;
+  }
+
+  /* vertical dashed line between steps */
+  .step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 42px;
+    bottom: 0;
+    width: 2px;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--orange) 0 6px,
+      transparent 6px 12px
+    );
+    opacity: 0.3;
+  }
+
+  .step h3 {
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+
+  .step p {
+    font-size: 0.9rem;
+  }
+
+  .num {
+    flex-shrink: 0;
+    margin-top: 2px;
   }
 }
