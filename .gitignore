@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# opencode local artifacts (nested .opencode/.gitignore handles its own deps)
+.opencode/bun.lock
