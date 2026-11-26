@@ -1,0 +1,530 @@
+.fig-iso {
+  --anatomy-page: transparent;
+  --anatomy-card: #fffaf5;
+  --anatomy-text: #5c5148;
+  --anatomy-strong: #241d17;
+  --anatomy-muted: #8a7a6a;
+  --anatomy-paper: #fdf8f3;
+  --anatomy-face: #fffdfb;
+  --anatomy-top: #ffffff;
+  --anatomy-shade-0: #d8c3b0;
+  --anatomy-shade-1: #e4d3c3;
+  --anatomy-shade-2: #ecdccd;
+  --anatomy-shade-3: #f4e7dc;
+  --anatomy-lit-top: #ffb27a;
+  --anatomy-lit-shade: #f08a4b;
+  --anatomy-hi: #2a211b;
+  --anatomy-mid: #8f7b69;
+  --anatomy-lo: #c4ae9a;
+  --anatomy-faint: #e5d7c9;
+  --anatomy-lit: #ea580c;
+  --anatomy-halo: #9c7654;
+  --anatomy-halo-opacity: 0.22;
+  --anatomy-dot: #5c5148;
+  --anatomy-weight: 0.7px;
+  --anatomy-red: #d94841;
+  --anatomy-green: #3b9b6b;
+  --anatomy-blue: #3e63dd;
+  --fig-ink: #2a211b;
+  --fig-limb: #ea580c;
+  --fig-limb-light: #fb923c;
+  --fig-limb-dark: #9a3412;
+  --fig-skin: #c98a5b;
+}
+
+.fig-iso .part-brand {
+  --anatomy-paper: #17191d;
+  --anatomy-face: #24272c;
+  --anatomy-top: #3a3e44;
+  --anatomy-shade-0: #090a0c;
+  --anatomy-shade-1: #101216;
+  --anatomy-shade-2: #181b20;
+  --anatomy-shade-3: #20242a;
+  --anatomy-lit-top: #535960;
+  --anatomy-lit-shade: #30353b;
+  --anatomy-hi: #090a0c;
+  --anatomy-mid: #a7adb4;
+  --anatomy-lo: #3b4148;
+  --anatomy-faint: #5d646c;
+  --anatomy-dot: #d7dbe0;
+}
+
+.fig-iso .pickup-accent {
+  --anatomy-paper: #ea580c;
+  --anatomy-face: #f97316;
+  --anatomy-top: #fb923c;
+  --anatomy-shade-0: #9a3412;
+  --anatomy-shade-1: #c2410c;
+  --anatomy-shade-2: #ea580c;
+  --anatomy-shade-3: #f97316;
+  --anatomy-mid: #7c2d12;
+  --anatomy-lo: #c2410c;
+  --anatomy-faint: #ea580c;
+}
+
+.fig-iso .part-card {
+  --anatomy-paper: #dfa25f;
+  --anatomy-face: #eab477;
+  --anatomy-top: #f7d3a5;
+  --anatomy-shade-0: #a9662f;
+  --anatomy-shade-1: #bd7940;
+  --anatomy-shade-2: #c98449;
+  --anatomy-shade-3: #d59457;
+  --anatomy-hi: #3f2412;
+  --anatomy-mid: #8a5428;
+  --anatomy-lo: #c08a52;
+  --anatomy-faint: #e0b988;
+  --anatomy-dot: #5c3a1e;
+}
+
+.fig-iso .part-ink {
+  --anatomy-paper: #2f2924;
+  --anatomy-face: #3a332c;
+  --anatomy-top: #4d4339;
+  --anatomy-shade-0: #1b1713;
+  --anatomy-shade-1: #241f1b;
+  --anatomy-shade-2: #2a241f;
+  --anatomy-shade-3: #332c26;
+  --anatomy-hi: #f6efe7;
+  --anatomy-mid: #9c8c7c;
+  --anatomy-lo: #5a4e43;
+  --anatomy-faint: #3a332c;
+  --anatomy-dot: #e8ded2;
+}
+
+.fig-iso .part-glass {
+  --anatomy-paper: #33424c;
+  --anatomy-face: #3f505b;
+  --anatomy-top: #6e8794;
+  --anatomy-shade-0: #1f2a31;
+  --anatomy-shade-1: #29363e;
+  --anatomy-shade-2: #2f3d46;
+  --anatomy-shade-3: #384751;
+  --anatomy-hi: #e8f1f6;
+  --anatomy-mid: #93a8b3;
+  --anatomy-lo: #56707d;
+  --anatomy-faint: #33424c;
+  --anatomy-dot: #dbe9f0;
+}
+
+.fig-iso .part-skin {
+  --anatomy-paper: #c98a5b;
+  --anatomy-face: #d69a6a;
+  --anatomy-top: #e8b98c;
+  --anatomy-shade-0: #945b33;
+  --anatomy-shade-1: #a9683e;
+  --anatomy-shade-2: #b47347;
+  --anatomy-shade-3: #bf7e52;
+  --anatomy-hi: #3a2113;
+  --anatomy-mid: #7d4a2c;
+  --anatomy-lo: #b57d52;
+  --anatomy-faint: #d8a97e;
+  --anatomy-dot: #4a2a16;
+}
+
+.fig-iso .part-metal {
+  --anatomy-paper: #b9afa4;
+  --anatomy-face: #c8beb2;
+  --anatomy-top: #e6ded4;
+  --anatomy-shade-0: #857a6f;
+  --anatomy-shade-1: #968b80;
+  --anatomy-shade-2: #a2988d;
+  --anatomy-shade-3: #afa59a;
+  --anatomy-hi: #3a332c;
+  --anatomy-mid: #7c7268;
+  --anatomy-lo: #b0a69b;
+  --anatomy-faint: #d6ccc1;
+  --anatomy-dot: #3a332c;
+}
+
+.fig-iso .part-tape {
+  --anatomy-paper: #d8b887;
+  --anatomy-face: #e5c99e;
+  --anatomy-top: #f3e2c4;
+  --anatomy-shade-0: #a17f52;
+  --anatomy-shade-1: #b28e5c;
+  --anatomy-shade-2: #bd9864;
+  --anatomy-shade-3: #c9a36d;
+  --anatomy-hi: #3f2d16;
+  --anatomy-mid: #8a6b3f;
+  --anatomy-lo: #c2a06b;
+  --anatomy-faint: #e0c79c;
+  --anatomy-dot: #5b4324;
+}
+
+.fig-iso .part-brand .iso-face-text,
+.fig-iso .brand-text {
+  fill: #fff7ef;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.fig-iso .iso-face-text {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.fig-iso .iso-svg {
+  overflow: hidden;
+}
+
+.fig-iso .fig-shadow {
+  fill: rgba(74, 47, 27, 0.16);
+  filter: blur(12px);
+}
+
+.fig-iso .fig-glow {
+  fill: rgba(234, 88, 12, 0.14);
+  filter: blur(26px);
+}
+
+.fig-iso .limb-outline {
+  fill: none;
+  stroke: var(--fig-ink);
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .limb-fill {
+  fill: none;
+  stroke: url(#limb-gradient);
+  stroke-width: 11;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .limb-shine {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.34);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.fig-iso .joint {
+  fill: var(--fig-ink);
+}
+
+.fig-iso .joint-core {
+  fill: var(--fig-limb-light);
+  opacity: 0.9;
+}
+
+.fig-iso .parcel-tape {
+  fill: none;
+  stroke: #f3e2c4;
+  stroke-linecap: butt;
+}
+
+.fig-iso .parcel-tape-edge {
+  fill: none;
+  stroke: #a17f52;
+  stroke-width: 0.7;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fig-iso .iso-halo {
+    filter: none;
+  }
+}
+
+.fig-iso {
+  position: relative;
+  width: 100%;
+  touch-action: manipulation;
+}
+
+.fig-iso .iso-stage {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.fig-iso .part-paper {
+  --anatomy-paper: #fffdf8;
+  --anatomy-face: #ffffff;
+  --anatomy-top: #ffffff;
+  --anatomy-shade-0: #e2d8cb;
+  --anatomy-shade-1: #ebe2d6;
+  --anatomy-shade-2: #f1e9df;
+  --anatomy-shade-3: #f7f1e9;
+  --anatomy-hi: #30271f;
+  --anatomy-mid: #8a7866;
+  --anatomy-lo: #c3b29f;
+  --anatomy-faint: #e4d8c8;
+  --anatomy-dot: #5c4c3d;
+}
+
+.fig-iso .part-cargo {
+  --anatomy-paper: #f0dfc8;
+  --anatomy-face: #f7e8d5;
+  --anatomy-top: #fff4e6;
+  --anatomy-shade-0: #c7a989;
+  --anatomy-shade-1: #d5b99a;
+  --anatomy-shade-2: #dfc6a9;
+  --anatomy-shade-3: #e8d2b9;
+  --anatomy-hi: #3a2415;
+  --anatomy-mid: #977453;
+  --anatomy-lo: #d4b797;
+  --anatomy-faint: #e8d6bd;
+  --anatomy-dot: #5c3b21;
+}
+
+.fig-iso .part-tyre {
+  --anatomy-paper: #2b2724;
+  --anatomy-face: #342f2b;
+  --anatomy-top: #45403b;
+  --anatomy-shade-0: #171412;
+  --anatomy-shade-1: #1d1a17;
+  --anatomy-shade-2: #221e1b;
+  --anatomy-shade-3: #28231f;
+  --anatomy-hi: #f2e9df;
+  --anatomy-mid: #93877b;
+  --anatomy-lo: #4f4841;
+  --anatomy-faint: #332e29;
+  --anatomy-dot: #e8ded2;
+}
+
+.fig-iso .part-rim {
+  --anatomy-paper: #c9c3bb;
+  --anatomy-face: #d8d2ca;
+  --anatomy-top: #efeae3;
+  --anatomy-shade-0: #918a82;
+  --anatomy-shade-1: #a09991;
+  --anatomy-shade-2: #aba49c;
+  --anatomy-shade-3: #b7b0a8;
+  --anatomy-hi: #3c3630;
+  --anatomy-mid: #7f7871;
+  --anatomy-lo: #b8b1a9;
+  --anatomy-faint: #d7d1c9;
+  --anatomy-dot: #3c3630;
+}
+
+.fig-iso .arch-dark {
+  fill: #38271c;
+}
+
+.fig-iso .wheel-shadow {
+  fill: rgba(45, 28, 16, 0.24);
+  filter: blur(3px);
+}
+
+.fig-iso .pickup-rope {
+  fill: none;
+  stroke: #7c4a2a;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .brand-sub {
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.fig-iso .brand-dark {
+  fill: #9a3412;
+  letter-spacing: 0.06em;
+}
+
+.fig-iso .trouser-outline,
+.fig-iso .sleeve-outline,
+.fig-iso .skin-outline {
+  fill: none;
+  stroke: var(--fig-ink);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .trouser-outline {
+  stroke-width: 11;
+}
+
+.fig-iso .trouser-fill {
+  fill: none;
+  stroke: #3f3a35;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .trouser-stripe {
+  fill: none;
+  stroke: #fb923c;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  opacity: 0.92;
+}
+
+.fig-iso .sleeve-outline {
+  stroke-width: 12;
+}
+
+.fig-iso .sleeve-fill {
+  fill: none;
+  stroke: #f97316;
+  stroke-width: 8.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .skin-outline {
+  stroke-width: 9;
+}
+
+.fig-iso .skin-fill {
+  fill: none;
+  stroke: #c98a5b;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fig-iso .worker-hand {
+  fill: #7c2d12;
+  stroke: #2a211b;
+  stroke-width: 1;
+}
+
+.fig-iso .safety-shoe {
+  fill: none;
+  stroke: #2f2620;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.fig-iso .safety-sole {
+  fill: none;
+  stroke: #17120f;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.fig-iso .safety-toe {
+  fill: #b8a894;
+  stroke: #2f2620;
+  stroke-width: 1;
+}
+
+.fig-iso .flap-fill {
+  fill: #eab477;
+  stroke: #a9662f;
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+}
+
+.fig-iso .box-label {
+  fill: #fffdf8;
+  stroke: #a9662f;
+  stroke-width: 0.7;
+}
+
+.fig-iso .packer-gun-body {
+  fill: #3f3a35;
+  stroke: #241d17;
+  stroke-width: 0.8;
+}
+
+.fig-iso .packer-gun-roll {
+  fill: #f1dfbf;
+  stroke: #a17f52;
+  stroke-width: 0.7;
+}
+
+.fig-iso .packer-item {
+  fill: #e5c99e;
+  stroke: #a17f52;
+  stroke-width: 0.8;
+}
+
+.fig-iso .packer-label {
+  fill: #fffdf8;
+  stroke: #8a7866;
+  stroke-width: 0.7;
+}
+
+.pickup-stage,
+.lifter-stage,
+.packer-stage {
+  position: relative;
+  border-radius: 18px;
+  outline: none;
+}
+
+.pickup-stage:focus-visible,
+.lifter-stage:focus-visible,
+.packer-stage:focus-visible {
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.28);
+}
+
+.fig-iso .tape-strip {
+  fill: none;
+  stroke: #f3e2c4;
+  stroke-width: 5;
+  stroke-linecap: butt;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fig-iso .tape-strip {
+    transition: none;
+  }
+}
+
+.fig-iso .pickup-lamp {
+  --anatomy-paper: #f3e3c2;
+  --anatomy-face: #fff8e6;
+  --anatomy-top: #fffdf4;
+  --anatomy-shade-0: #c3ad84;
+  --anatomy-shade-1: #d8c4a0;
+  --anatomy-shade-2: #e8d5b2;
+  --anatomy-shade-3: #f6e8cd;
+  --anatomy-hi: #3a3128;
+  --anatomy-mid: #8a7355;
+  --anatomy-lo: #c6b190;
+  --anatomy-faint: #e7d9c0;
+  --anatomy-lit-top: #ffe0a3;
+  --anatomy-lit-shade: #ffc46e;
+}
+
+.fig-iso .pickup-lamp[data-lit] {
+  filter: drop-shadow(0 0 6px rgba(255, 198, 116, 0.9));
+}
+
+.fig-iso .pickup-amber {
+  --anatomy-paper: #b96a17;
+  --anatomy-face: #d98222;
+  --anatomy-top: #f0a144;
+  --anatomy-shade-0: #74400c;
+  --anatomy-shade-1: #8f5211;
+  --anatomy-shade-2: #a25e15;
+  --anatomy-shade-3: #b96f1d;
+  --anatomy-hi: #3f2205;
+  --anatomy-mid: #9a5c1a;
+  --anatomy-lo: #d3964d;
+  --anatomy-faint: #ecc492;
+}
+
+.fig-iso .pickup-amber[data-lit] {
+  filter: drop-shadow(0 0 5px rgba(255, 176, 74, 0.85));
+}
+
+.fig-iso .pickup-red {
+  --anatomy-paper: #9f2f28;
+  --anatomy-face: #bd3a31;
+  --anatomy-top: #dc5b51;
+  --anatomy-shade-0: #581612;
+  --anatomy-shade-1: #74201b;
+  --anatomy-shade-2: #8a2721;
+  --anatomy-shade-3: #a6322b;
+  --anatomy-hi: #340b09;
+  --anatomy-mid: #8a2a24;
+  --anatomy-lo: #cf746c;
+  --anatomy-faint: #e3a8a2;
+}
+
+.fig-iso .pickup-red[data-lit] {
+  filter: drop-shadow(0 0 6px rgba(220, 78, 66, 0.7));
+}

@@ -14,7 +14,7 @@ export default function Footer() {
               <span className={styles.logoMark}>
                 <LogoMark />
               </span>
-              SIGAP Express
+              Lorong Hitam
             </div>
             <p className={styles.brandDesc}>
               Jasa pengantaran dan packing barang untuk kebutuhan rumah, kantor, dan usaha kecil.
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <span>© 2026 SIGAP Express. Semua hak dilindungi.</span>
+          <span>© 2026 Lorong Hitam. Semua hak dilindungi.</span>
           <span>Dibuat sebagai portofolio situs jasa pengantaran &amp; packing.</span>
         </div>
       </div>

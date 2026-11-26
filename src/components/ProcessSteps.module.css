@@ -1,6 +1,6 @@
 .process {
   padding: var(--section-y) 0;
-  background: var(--orange-tint);
+  background: var(--white);
 }
 
 @media (max-width: 640px) {

@@ -40,7 +40,7 @@ export default function WhyUs() {
     <section className={styles.why} id="kenapa">
       <div className={`wrap ${styles.grid}`}>
         <div>
-          <span className="eyebrow">Kenapa SIGAP Express</span>
+          <span className="eyebrow">Kenapa Lorong Hitam</span>
           <h2 className={styles.heading}>Dikerjakan seperti barang itu milik kami sendiri.</h2>
           <div className={styles.list}>
             {REASONS.map((reason) => (

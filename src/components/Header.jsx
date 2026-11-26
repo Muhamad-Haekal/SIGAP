@@ -5,6 +5,7 @@ import styles from './Header.module.css'
 
 const NAV_LINKS = [
   { href: '#layanan', label: 'Layanan' },
+  { href: '#standar', label: 'Standar' },
   { href: '#proses', label: 'Cara Kerja' },
   { href: '#kenapa', label: 'Kenapa Kami' },
   { href: '#kontak', label: 'Kontak' },
@@ -18,14 +19,21 @@ export default function Header() {
   return (
     <header className={styles.header} role="banner">
       <div className={`wrap ${styles.nav}`}>
-        <a href="#" className={styles.logo}>
+        <a href="#awal" className={styles.logo}>
           <span className={styles.logoMark}>
             <LogoMark />
           </span>
-          SIGAP Express
+          Lorong Hitam
         </a>
 
-        <nav className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
+        <nav
+          id="primary-navigation"
+          aria-label="Navigasi utama"
+          className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') closeMenu()
+          }}
+        >
           {NAV_LINKS.map((link) => (
             <a key={link.href} href={link.href} onClick={closeMenu}>
               {link.label}
@@ -63,6 +71,7 @@ export default function Header() {
           className={styles.menuToggle}
           aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
           aria-expanded={isOpen}
+          aria-controls="primary-navigation"
           onClick={() => setIsOpen((value) => !value)}
         >
           <MenuIcon />

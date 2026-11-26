@@ -13,7 +13,7 @@ const SERVICES = [
       'Armada motor & pickup untuk dalam kota',
       'Konfirmasi foto saat barang diterima',
     ],
-    ctaMsg: 'Halo SIGAP Express, saya ingin tanya soal Jasa Pengantaran.',
+    ctaMsg: 'Halo Lorong Hitam, saya ingin tanya soal Jasa Pengantaran.',
   },
   {
     id: 'kombo',
@@ -25,7 +25,7 @@ const SERVICES = [
       'Lebih hemat dibanding pesan terpisah',
       'Cocok untuk elektronik & furnitur',
     ],
-    ctaMsg: 'Halo SIGAP Express, saya ingin tanya soal paket Antar + Packing.',
+    ctaMsg: 'Halo Lorong Hitam, saya ingin tanya soal paket Antar + Packing.',
     featured: true,
     tag: 'Paling diminati',
   },
@@ -39,7 +39,7 @@ const SERVICES = [
       'Label penanganan (mudah pecah, atas-bawah)',
       'Bisa dipesan tanpa pengantaran',
     ],
-    ctaMsg: 'Halo SIGAP Express, saya ingin tanya soal Jasa Packing & Wrapping.',
+    ctaMsg: 'Halo Lorong Hitam, saya ingin tanya soal Jasa Packing & Wrapping.',
   },
 ]
 

@@ -1,11 +1,11 @@
 import { WaIcon } from './Icons'
 import { buildWaLink, DEFAULT_WA_MESSAGE } from '../utils/whatsapp'
-import HeroScene from './HeroScene'
+import { PickupStage } from './figures/Truck'
 import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="awal">
       <div className={`wrap ${styles.grid}`}>
         <div>
           <span className="eyebrow">Layanan antar &amp; packing barang</span>
@@ -14,7 +14,7 @@ export default function Hero() {
             <span className={styles.accent}>sampai tanpa cemas.</span>
           </h1>
           <p className={styles.lead}>
-            SIGAP Express mengantar dan mengemas barang Anda dengan standar kerja yang sama —
+            Lorong Hitam mengantar dan mengemas barang Anda dengan standar kerja yang sama —
             teliti di setiap sudut kotak, aman di sepanjang jalan.
           </p>
           <div className={styles.cta}>
@@ -47,8 +47,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.sceneBox} aria-hidden="true">
-          <HeroScene />
+        <div className={styles.sceneBox}>
+          <PickupStage />
         </div>
       </div>
     </section>

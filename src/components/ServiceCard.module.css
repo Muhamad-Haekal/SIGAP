@@ -1,13 +1,13 @@
 .card {
   position: relative;
   padding: 28px 24px;
-  border: 1.5px solid var(--line);
+  border: 1px solid var(--line);
   border-radius: var(--radius-card);
   background: var(--white);
   display: flex;
   flex-direction: column;
   gap: 12px;
-  box-shadow: var(--shadow-xs);
+  box-shadow: none;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
@@ -33,11 +33,11 @@
 }
 
 .featured p {
-  color: #c4b8ab;
+  color: #e7e5e4;
 }
 
 .featured li {
-  color: #c4b8ab;
+  color: #e7e5e4;
 }
 
 .featured h3 {
